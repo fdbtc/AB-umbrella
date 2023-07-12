@@ -1,0 +1,106 @@
+{
+	"id": "guobin-koudaizhuan",
+	"displayName": "【绝对精品】完整项目可直接上线，含试玩游戏，试玩应用，购物返利，cps，外卖领券，短视频，激励视频等uniad结合变现的APP网赚平台",
+	"version": "1.0.0",
+	"description": "不懂技术都能直接能上手，项目用nvue写的，体验一流，包含试玩游戏、应用赚钱，购物返利，cps，外卖领券，短视频，激励视频等广告结合的一款变现app,具体详情可下载项目查看",
+	"keywords": [
+        "uniCloud",
+        "uniapp",
+        "uniad",
+        "游戏",
+        "网赚",
+        ""
+    ],
+	"repository": "",
+	"engines": {
+		"HBuilderX": "^3.3.10"
+	},
+    "dcloudext": {
+        "sale": {
+			"regular": {
+				"price": "1688.00"
+			},
+			"sourcecode": {
+				"price": "1888.00"
+			}
+		},
+		"contact": {
+			"qq": "1115298249"
+		},
+		"declaration": {
+			"ads": "uniad,开屏广告，激励视频广告等",
+			"data": "采集用户设备标识，用于限制一机多号，刷量行为",
+			"permissions": "默认权限即可"
+		},
+        "npmurl": "",
+        "type": "unicloud-template-project"
+	},
+	"uni_modules": {
+		"dependencies": [],
+		"encrypt": [
+			"uniCloud-aliyun/cloudfunctions/appreq/controller/datacommon.js",
+			"uniCloud-aliyun/cloudfunctions/appreq/controller/getdata.js",
+			"uniCloud-aliyun/cloudfunctions/appreq/controller/updatedata.js",
+			"uniCloud-aliyun/cloudfunctions/adminreq/controller/datacommon.js",
+			"uniCloud-aliyun/cloudfunctions/adminreq/controller/getData.js",
+			"uniCloud-aliyun/cloudfunctions/adminreq/controller/updateAdmin.js",
+			"uniCloud-aliyun/cloudfunctions/adminreq/controller/userAdmin.js",
+			"uniCloud-aliyun/cloudfunctions/appreq-one/controller/datacommon.js",
+			"uniCloud-aliyun/cloudfunctions/appreq-one/controller/getdata.js",
+			"uniCloud-aliyun/cloudfunctions/appreq-one/controller/updatedata.js",
+			"uniCloud-aliyun/cloudfunctions/appreq-one/controller/userabout.js",
+			"uniCloud-aliyun/cloudfunctions/cps/controller/ddxCps.js",
+			"uniCloud-aliyun/cloudfunctions/chb-check-update/index.js",
+			"uniCloud-aliyun/cloudfunctions/update-day-ds/index.js",
+			"uniCloud-aliyun/cloudfunctions/duoyou/index.js",
+			"uniCloud-aliyun/cloudfunctions/jxwgame/index.js",
+			"uniCloud-aliyun/cloudfunctions/mgxq/index.js",
+			"uniCloud-aliyun/cloudfunctions/xlx/index.js",
+			"uniCloud-aliyun/cloudfunctions/taojin/index.js",
+			"uniCloud-aliyun/cloudfunctions/shanyou/index.js"
+		],
+		"platforms": {
+			"cloud": {
+				"tcb": "y",
+				"aliyun": "y"
+			},
+			"client": {
+				"App": {
+					"app-vue": "u",
+					"app-nvue": "y"
+				},
+				"H5-mobile": {
+					"Safari": "u",
+					"Android Browser": "u",
+					"微信浏览器(Android)": "u",
+					"QQ浏览器(Android)": "u"
+				},
+				"H5-pc": {
+					"Chrome": "u",
+					"IE": "u",
+					"Edge": "u",
+					"Firefox": "u",
+					"Safari": "u"
+				},
+				"小程序": {
+					"微信": "u",
+					"阿里": "u",
+					"百度": "u",
+					"字节跳动": "u",
+					"QQ": "u"
+				},
+				"快应用": {
+					"华为": "u",
+					"联盟": "u"
+                },
+                "Vue": {
+                    "vue2": "y",
+                    "vue3": "u"
+                }
+			}
+		}
+	},
+	"dependencies": {
+		"urlencode": "^1.1.0"
+	}
+}

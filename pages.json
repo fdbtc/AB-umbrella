@@ -1,0 +1,625 @@
+{
+	// 自动扫描组件
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"gbScroll": "@/components/gb-scroll/gb-scroll.vue",
+			"indexList": "@/components/index/index-list.vue",
+			"uniQrcode": "@/components/uni-qrcode/uni-qrcode.vue",
+			"doubleButton": "@/components/common/double-button.vue",
+			"flexBotButtom": "@/components/common/flex-bot-buttom.vue",
+			"hTabbar": "@/components/common/h-tabbar.vue",
+			"loadingIcon": "@/components/common/loading-icon.vue",
+			"loadMore": "@/components/common/load-more.vue",
+			"mixTapButton": "@/components/common/mix-tap-button.vue",
+			"noThing": "@/components/common/no-thing.vue",
+			"popupTs": "@/components/common/popup-ts.vue",
+			"projectList": "@/components/common/project-list.vue",
+			"singleButton": "@/components/common/single-button.vue",
+			"topDec": "@/components/common/top-dec.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/juanzhou/list",
+			"style": {
+				"navigationBarTitleText": "广告宝大厅",
+				"navigationBarBackgroundColor": "#fee610",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		},
+		{
+			"path": "pages/juanzhou/juanzhou",
+			"style": {
+				"navigationBarTitleText": "宝盒中心",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"background": "#EDEDED",
+					"pullToRefresh": {
+						"support": true,
+						"color": "#000000",
+						"style": "circle",
+						"offset": "100px"
+					},
+					"titleNView": "false"
+				}
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"titleNView": "false"
+				}
+			}
+
+		}, {
+			"path": "pages/registered/registered",
+			"style": {
+				"navigationBarTitleText": "用户注册",
+				"app-plus": {
+					"background": "#F8F8F8"
+				}
+			}
+
+		},
+        {
+        	"path": "pages/forgot-pwd/forgot-pwd",
+        	"style": {
+        		"navigationBarTitleText": "忘记密码",
+        		"app-plus": {
+        			"background": "#F8F8F8"
+        		}
+        	}
+        
+        },
+		{
+			"path": "pages/index/cps",
+			"style": {
+				"navigationBarTitleText": "每日省钱",
+				"navigationBarBackgroundColor": "#F85C09",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"background": "#EDEDED",
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/index/search-cps",
+			"style": {
+				"navigationBarTitleText": "搜索商品",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+		},
+		{
+			"path": "pages/index/cps-dec",
+			"style": {
+				"navigationBarTitleText": "详细流程",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+		},
+		{
+			"path": "pages/index/cps-list",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+		},
+		{
+			"path": "pages/index/hunhe",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"app-plus": {
+					"background": "#EDEDED",
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/index/goods-details",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"app-plus": {
+					"background": "#EDEDED",
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/spread/code",
+			"style": {
+				"navigationBarTitleText": "推广二维码",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+		},
+		{
+			"path": "pages/spread/spread",
+			"style": {
+				"navigationBarTitleText": "邀请好友"
+			}
+		}, {
+			"path": "pages/spread-list/spread-list",
+			"style": {
+				"navigationBarTitleText": "邀请列表",
+				"app-plus": {
+					"background": "#EDEDED",
+					"pullToRefresh": {
+						"support": true,
+						"color": "#000000",
+						"style": "circle",
+						"offset": "100px"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/luck/luck",
+			"style": {
+				"navigationBarTitleText": "幸运抽奖",
+				"navigationBarBackgroundColor": "#F118E3",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"background": "#143EFA",
+					"titleNView": {
+						"buttons": [
+							// 右边
+							{
+								"color": "#ffffff",
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text": "\ue65b"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/help/help",
+			"style": {
+				"navigationBarTitleText": "使用教程"
+			}
+
+		}, {
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"background": "#EDEDED",
+					"pullToRefresh": {
+						"support": true,
+						"color": "#000000",
+						"style": "circle",
+						"offset": "100px"
+					},
+					"titleNView": "false"
+				}
+			}
+		}, {
+			"path": "pages/home/yqm",
+			"style": {
+				"navigationBarTitleText": "填写邀请码",
+				"app-plus": {
+					"background": "#EDEDED",
+					"titleNView": {
+						"buttons": [
+							// 右边
+							{
+								"color": "#ffffff",
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text": "\ue65b"
+							}
+						]
+					}
+				}
+			}
+		}, {
+			"path": "pages/video/video",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"background": "#EDEDED",
+					"titleNView": "false"
+				}
+			}
+
+		}, {
+			"path": "pages/find/find",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"background": "#EDEDED",
+					"titleNView": "false"
+				}
+			}
+
+		}, {
+			"path": "pages/shanyou/shanyou",
+			"style": {
+				"navigationBarTitleText": "闪游盒子",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/wallet/wallet",
+			"style": {
+				"navigationBarTitleText": "账户余额",
+				"app-plus": {
+					"background": "#EDEDED",
+					"titleNView": {
+						"buttons": [
+							// 右边
+							{
+								"color": "#000000",
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text": "\ue65b"
+							}
+						]
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/my-data/my-data",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/withdrawal-state/withdrawal-state",
+			"style": {
+				"navigationBarTitleText": "提现记录",
+				"app-plus": {
+					"background": "#EDEDED",
+					"pullToRefresh": {
+						"support": true,
+						"color": "#000000",
+						"style": "circle",
+						"offset": "100px"
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/update-app/update-app",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+
+				}
+			}
+		}, {
+			"path": "pages/setup/setup",
+			"style": {
+				"navigationBarTitleText": "系统设置",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+		}, {
+			"path": "pages/announcement/announcement",
+			"style": {
+				"navigationBarTitleText": "系统公告",
+				"app-plus": {
+					"background": "#EDEDED",
+					"pullToRefresh": {
+						"support": true,
+						"color": "#000000",
+						"style": "circle",
+						"offset": "100px"
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/privacy-agreement/privacy-agreement",
+			"style": {
+				"navigationBarTitleText": "隐私协议",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/user-agreement/user-agreement",
+			"style": {
+				"navigationBarTitleText": "用户协议",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/about-us/about-us",
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/money-detail/money-detail",
+			"style": {
+				"navigationBarTitleText": "资金明细",
+				"app-plus": {
+					"background": "#EDEDED",
+					"pullToRefresh": {
+						"support": true,
+						"color": "#000000",
+						"style": "circle",
+						"offset": "100px"
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/bouns-coin/coin-detail",
+			"style": {
+				"navigationBarTitleText": "分红币明细",
+				"app-plus": {
+					"background": "#EDEDED",
+					"pullToRefresh": {
+						"support": true,
+						"color": "#000000",
+						"style": "circle",
+						"offset": "100px"
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/game/duoyou-game",
+			"style": {
+				"navigationBarTitleText": "多游试玩",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/bouns-coin/bouns-coin",
+			"style": {
+				"navigationBarTitleText": "福利分红",
+				"navigationBarBackgroundColor": "#F73C10",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"background": "#FF3A51",
+					"pullToRefresh": {
+						"support": true,
+						"color": "#000000",
+						"style": "circle",
+						"offset": "100px"
+					},
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/personal-statement/personal-statement",
+			"style": {
+				"navigationBarTitleText": "任务明细",
+				"app-plus": {
+					"background": "#EDEDED",
+					"pullToRefresh": {
+						"support": true,
+						"color": "#000000",
+						"style": "circle",
+						"offset": "100px"
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/real-name/real-name",
+			"style": {
+				"navigationBarTitleText": "绑定收款方式",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/home/qiandao",
+			"style": {
+				"navigationBarTitleText": "好物兑换",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/juanzhou/gz",
+			"style": {
+				"navigationBarTitleText": "规则说明",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/juanzhou/juanzhou",
+			"style": {
+				"navigationBarTitleText": "宝盒中心",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/juanzhou/mx",
+			"style": {
+				"navigationBarTitleText": "广告宝明细",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/shop-details/shop-details",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/add-dz/add-dz",
+			"style": {
+				"navigationBarTitleText": "添加地址",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/qr-dd/qr-dd",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/adress-list/adress-list",
+			"style": {
+				"navigationBarTitleText": "我的地址",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/buy-shoplist/buy-shoplist",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"app-plus": {
+					"background": "#EDEDED"
+				}
+			}
+
+		}, {
+			"path": "pages/game/nine-game",
+			"style": {
+				"navigationBarTitleText": "淘金试玩",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/web/web",
+			"style": {
+				"navigationBarTitleText": "加载中..."
+			}
+
+		}, {
+			"path": "uni_modules/uni-pay/pages/success/success",
+			"style": {
+				"backgroundColor": "#F8F8F8",
+				"navigationBarTitleText": "支付成功"
+			}
+		}, {
+			"path": "uni_modules/uni-pay/pages/ad-interactive-webview/ad-interactive-webview",
+			"style": {
+				"backgroundColor": "#F8F8F8",
+				"navigationBarTitleText": "ad"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#EDEDED",
+		"pageOrientation": "portrait",
+		"dynamicRpx": true,
+		"app-plus": {
+			"bounce": "none", //关闭窗口回弹效果
+			"scrollIndicator": "none"
+		}
+	},
+	"tabBar": {
+		"color": "#979492",
+		"selectedColor": "#000000",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "white",
+		"fontSize": "13px",
+		"iconWidth": "33px",
+		"height": "65px",
+		"list": [{
+				"pagePath": "pages/juanzhou/list",
+				"text": "首页",
+				"iconPath": "static/tab/tab-22.png",
+				"selectedIconPath": "static/tab/tab-2.png"
+			},
+			{
+				"pagePath": "pages/video/video",
+				"text": "视频",
+				"iconPath": "static/tab/tab3-33.png",
+				"selectedIconPath": "static/tab/tab3-3.png"
+			},
+			// {
+			// 	"pagePath": "pages/spread/spread",
+			// 	"text": "邀请",
+			// 	"iconPath": "static/tab/tab5-55.png",
+			// 	"selectedIconPath": "static/tab/tab5-5.png"
+			// },
+			{
+				"pagePath": "pages/index/hunhe",
+				"text": "购物",
+				"iconPath": "static/tab/shop2(1).png",
+				"selectedIconPath": "static/tab/shop2.png"
+			},
+			{
+				"pagePath": "pages/home/home",
+				"text": "我的",
+				"iconPath": "./static/tab/tab-11.png",
+				"selectedIconPath": "static/tab/tab-1.png"
+			}
+		]
+	}
+}
